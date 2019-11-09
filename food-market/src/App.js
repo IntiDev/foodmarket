@@ -5,6 +5,7 @@ import InitialScreen from './Scenes/InitialScreen/InitialScreen';
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import Recipe from './Scenes/Customer/Scenes/Recipe/Recipe';
 import Categories from './Scenes/Customer/Scenes/Categories/Categories';
+import AdmRecipe from './Scenes/Admin/Recipe/Recipe';
 
 const App = ()=>{
 return(
@@ -14,6 +15,7 @@ return(
                     <Route path="/u/recipe" component={Recipe} exact/>
                     <Route path="/u/categories" component={Categories} exact/>
                     <Route path="/" component={InitialScreen} exact/>
+                    <Route path="/a/recipe" component={AdmRecipe} exact />
                     <Redirect from='/' to="/"/>
                 </Switch>
             </Router>
