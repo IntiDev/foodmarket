@@ -1,0 +1,28 @@
+@import '../../../assets/Styles/measures.scss';
+
+.Recipe{
+    position: relative;
+    padding: 0 $padding-container/2;
+    margin: $title-bar-height 0;
+
+    &-wrapper{
+        position: relative;
+        overflow-x:scroll;
+        height: 35.5rem !important;
+    }
+    &-cardsWrapper{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: $recipe-card-width;
+        column-gap:$element-space*2;
+        margin-left: $element-space;
+    }
+
+    &-timeOfTheDay{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: $element-space*2;
+    }
+}
