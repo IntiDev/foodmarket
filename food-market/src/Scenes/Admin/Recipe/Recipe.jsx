@@ -3,7 +3,7 @@ import './Recipe.scss';
 import '../../../components/BottomBar/BottomBar';
 import '../../../components/TitleBar/TitleBar';
 import TitleBar from '../../../components/TitleBar/TitleBar';
-import BottomBar from '../../../components/BottomBar/BottomBar';
+import BottomBar from '../BottomBar/BottomBar';
 import RecipeCard from './RecipeCards/RecipeCard';
 import SalmonImg from '../../../assets/Images/salmon.jpg';
 import PancakeImg from '../../../assets/Images/pancake.jpg';
@@ -31,7 +31,23 @@ const Recipe = ()=>{
         image:PizzaImg,
         name:'Pizza',
         type:'Fast food'
-        }
+        },
+        {
+        image:SalmonImg,
+        name:'Salmón',
+        type:'Mariscos'
+        },
+        {
+        image:PancakeImg,
+        name:'Pancake',
+        type:'Panadería'
+        },
+        {
+        image:PizzaImg,
+        name:'Pizza',
+        type:'Fast food'
+        },
+        
     ];
     const timeOfTheDay = ['Desayuno','Comida','Cena'];
      return(

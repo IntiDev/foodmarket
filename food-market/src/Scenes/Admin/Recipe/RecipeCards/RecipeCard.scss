@@ -2,19 +2,21 @@
 @import '../../../../assets/Styles/measures.scss';
 
 .RecipeCard{
-    max-width: $recipe-card-width;
-    height: $recipe-card-height;
-    border-radius: $border-radius-boxes*3;
-    padding: $padding-container;
+    max-width: $recipe-card-width/1.5;
+    height: $recipe-card-height/2;
+    border-radius: $border-radius-boxes*2;
+    padding: $padding-container/3;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: $white;
     display: flex;
-    align-items: flex-end;
-    align-content: flex-start;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+    // align-items: flex-end;
+    // align-content: flex-start;
     &-name{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         font-family: 'Montserrat-bold',sans-serif;
     }
     &-type{

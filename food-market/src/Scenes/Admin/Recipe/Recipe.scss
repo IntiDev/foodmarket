@@ -6,20 +6,26 @@
     margin: $title-bar-height 0;
 
     &-wrapper{
-        position: relative;
-        overflow-x:scroll;
-        height: 35.5rem !important;
+        // position: relative;
+        // overflow-x:scroll;
+        height: 54.5rem !important;
+        width: 92vw !important;
     }
     &-cardsWrapper{
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: $recipe-card-width;
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        // display: grid;
+        // grid-auto-flow: column;
+        // grid-auto-columns: $recipe-card-width;
         column-gap:$element-space*2;
         margin-left: $element-space;
     }
 
     &-timeOfTheDay{
         display: flex;
+        margin-top: 0 !important;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
