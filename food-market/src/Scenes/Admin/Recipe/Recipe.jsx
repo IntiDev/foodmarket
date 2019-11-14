@@ -9,6 +9,7 @@ import SalmonImg from '../../../assets/Images/salmon.jpg';
 import PancakeImg from '../../../assets/Images/pancake.jpg';
 import HamburguerImg from '../../../assets/Images/hamburguer.jpg';
 import PizzaImg from '../../../assets/Images/pizza.jpg';
+import {Link} from 'react-router-dom';
 
 const Recipe = ()=>{
     const recipeCards = [
@@ -60,10 +61,12 @@ const Recipe = ()=>{
                 {
                     recipeCards.map((card)=>{
                         return(
-                            <RecipeCard
-                            cardType="recipeCard"
-                            recipe={{image:card.image,name:card.name,type:card.type}}
-                            />
+                            <Link to ={'/a/detail-recipe'}>
+                                <RecipeCard
+                                cardType="recipeCard"
+                                recipe={{image:card.image,name:card.name,type:card.type}}
+                                />
+                            </Link>
                         )
                     })
                 }

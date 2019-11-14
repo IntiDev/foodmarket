@@ -1,0 +1,45 @@
+@import '../../../../assets/Styles/measures.scss';
+
+.DetailRecipe {
+  background-color: #FFECB3;
+  // background-color: #f0eea5;
+  height: 78vh;
+  padding: 0 $padding-container/2;
+  margin: $title-bar-height 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  &-img {
+    width: 18rem;
+    height: 21rem;
+    margin: 2rem 1rem 0 1rem;
+    border-radius: 2rem;
+  }
+
+  &-wrapper {
+    margin: 3rem 1.5rem;
+    width: 21.5rem;
+  }
+
+  &-tag {
+    color: green;
+    font-family: 'Montserrat-bold',sans-serif;
+    font-size: 2rem;
+  }
+
+  &-list {
+    font-size: 1rem;
+    margin: 2rem 1rem;
+  }
+
+  &-instructions{
+    font-family: 'Montserrat-bold',sans-serif;
+    margin: 0 1rem;
+  }
+
+  &-instructions-item {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #455A64;
+  }
+}
