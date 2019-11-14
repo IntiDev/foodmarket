@@ -3,7 +3,7 @@ import './Recipe.scss';
 import '../../../components/BottomBar/BottomBar';
 import '../../../components/TitleBar/TitleBar';
 import TitleBar from '../../../components/TitleBar/TitleBar';
-// import BottomBar from '../BottomBar/BottomBar';
+import BottomBar from '../BottomBar/BottomBar';
 import RecipeCard from './RecipeCards/RecipeCard';
 import SalmonImg from '../../../assets/Images/salmon.jpg';
 import PancakeImg from '../../../assets/Images/pancake.jpg';

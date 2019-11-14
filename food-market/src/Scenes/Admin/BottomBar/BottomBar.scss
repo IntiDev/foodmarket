@@ -1,12 +1,12 @@
-@import '../../assets/Styles/measures.scss';
-@import '../../assets/Styles/colors.scss';
+@import '../../../assets/Styles/measures.scss';
+@import '../../../assets/Styles/colors.scss';
 
 .BottomBar{
     height: $bottom-bar-height;
     border-top: 1px solid $light-grey;
     background-color: $white;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr);
     padding: 0 $padding-container/2.5;
     position: fixed;
     bottom: 0;

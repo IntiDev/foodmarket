@@ -1,34 +1,24 @@
 import React from 'react';
 import './BottomBar.scss';
-import {ReactComponent as UserIcon} from '../../assets/Images/icons/user-icon.svg';
-import {ReactComponent as HeartIcon} from '../../assets/Images/icons/heart-icon.svg';
-import {ReactComponent as ShoppingCarIcon} from '../../assets/Images/icons/shoppingCar-icon.svg';
-import {ReactComponent as CategoriesIcon} from '../../assets/Images/icons/categories-icon.svg';
-import {ReactComponent as Logo} from '../../assets/Images/logo.svg';
+import {ReactComponent as AddIcon} from '../../../assets/Images/icons/add-icon.svg';
+import {ReactComponent as Logo} from '../../../assets/Images/logo.svg';
+import {ReactComponent as EditIcon} from '../../../assets/Images/icons/edit-icon.svg';
+import {ReactComponent as SaveIcon} from '../../../assets/Images/icons/save-icon.svg';
 import {Link} from 'react-router-dom';
 
 const BottomBar = ()=>{
     return(
         <div className='BottomBar'>
             <div className="BottomBar-item">
-                <UserIcon/>
-            </div>
-            
-            <div className="BottomBar-item">
-                <Link to={'/u/categories'}>
-                    <CategoriesIcon/>
-                </Link>
+                <AddIcon/>
             </div>
             <div className="BottomBar-item-logo BottomBar-item">
-                <Link to ={'/u/recipe'}>
+                <Link to ={'/a/recipe'}>
                     <Logo/>
                 </Link>
             </div>
             <div className="BottomBar-item">
-                <HeartIcon/>
-            </div>
-            <div className="BottomBar-item">
-                <ShoppingCarIcon/>
+                <EditIcon/>
             </div>
         </div>
     )
